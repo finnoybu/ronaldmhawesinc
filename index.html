@@ -3,238 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronald M. Hawes Inc. | Custom Home Building in Loudoun County, VA</title>
+<title>Ronald M. Hawes Inc. — Design Concepts</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1916; --charcoal:#2a2620; --stone:#57514a; --mist:#8a837a;
+    --paper:#fbf8f3; --cream:#f4efe7; --amber:#b07d3c; --amber-dark:#8a5e28; --amber-soft:#e8dcc8;
+    --line:rgba(27,25,22,.12); --serif:"Playfair Display",Georgia,serif; --sans:"Inter",-apple-system,system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--paper);color:var(--charcoal);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+  .top{background:var(--ink);color:#fff;padding:54px 28px 48px;text-align:center}
+  .top .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber-soft);display:block;margin-bottom:16px}
+  .top h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5vw,46px);color:#fff;line-height:1.1}
+  .top p{color:rgba(255,255,255,.82);font-weight:300;margin-top:16px;font-size:17px;max-width:560px;margin-left:auto;margin-right:auto}
+  .wrap{max-width:1060px;margin:0 auto;padding:56px 28px 72px;width:100%}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;text-decoration:none;color:inherit}
+  .card.live:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(27,25,22,.16)}
+  .thumb{height:150px;background:var(--cream);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);position:relative}
+  .thumb .n{font-family:var(--serif);font-size:54px;color:var(--amber);opacity:.9}
+  .card.live .thumb{background:linear-gradient(135deg,#2a2620,#4a3f30)}
+  .card.live .thumb .n{color:var(--amber-soft);opacity:1}
+  .body{padding:24px 24px 26px;flex:1;display:flex;flex-direction:column}
+  .body h2{font-family:var(--serif);font-size:22px;color:var(--ink);margin-bottom:6px}
+  .body p{font-size:14px;color:var(--stone);font-weight:300;flex:1}
+  .badge{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:2px;margin-top:18px;width:max-content}
+  .badge.on{background:var(--amber);color:#fff}
+  .badge.soon{background:var(--cream);color:var(--mist);border:1px solid var(--line)}
+  .card.soon{opacity:.72;cursor:default}
+  .foot{margin-top:auto;text-align:center;padding:26px;color:var(--mist);font-size:13px;border-top:1px solid var(--line)}
+  .foot strong{color:var(--stone);font-weight:500}
+</style>
 </head>
 <body>
-
-<!-- ===== Header ===== -->
-<header class="site-header" id="header">
-  <div class="wrap nav">
-    <a href="index.html" class="brand">
-      <span class="brand-name">Ronald M. Hawes</span>
-      <span class="brand-sub">Custom Builders · Est. 1982</span>
-    </a>
-    <nav class="nav-links">
-      <a href="index.html" class="navlink active">Home</a>
-      <a href="index.html#about" class="navlink">About</a>
-      <a href="services.html" class="navlink">Services</a>
-      <a href="portfolio.html" class="navlink">Portfolio</a>
-      <a href="contact.html" class="navlink">Contact</a>
-    </nav>
-    <a href="tel:+15408225795" class="nav-cta">☎ (540) 822-5795</a>
-    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <div class="top">
+    <span class="eyebrow">Ronald M. Hawes Inc.</span>
+    <h1>Website Design Concepts</h1>
+    <p>A few directions to consider for the new site. Click any concept to explore the full mockup, then let us know which feels right.</p>
   </div>
-</header>
 
-<!-- ===== Hero ===== -->
-<section class="hero" style="--hero-img:url('https://ronaldmhawesinc.com/wp-content/uploads/2022/08/rmh-slider-img4.jpeg')">
-  <div class="hero-overlay"></div>
   <div class="wrap">
-    <div class="hero-inner">
-      <span class="eyebrow">Loudoun County, Virginia · 40+ Years</span>
-      <h1>We Build<br>Your Dreams.</h1>
-      <p class="lead">Custom homes, additions, and renovations crafted with four decades of experience — and a handshake you can trust from the first sketch to the final nail.</p>
-      <div class="hero-actions">
-        <a href="portfolio.html" class="btn btn--primary">View Our Work →</a>
-        <a href="contact.html" class="btn btn--ghost">Start Your Project</a>
+    <div class="grid">
+      <a class="card live" href="site1/index.html">
+        <div class="thumb"><span class="n">1</span></div>
+        <div class="body">
+          <h2>Concept 1 — Heritage Craft</h2>
+          <p>Warm, premium custom-home feel: charcoal and brass palette, classic serif headlines, large imagery.</p>
+          <span class="badge on">View concept</span>
+        </div>
+      </a>
+
+      <div class="card soon">
+        <div class="thumb"><span class="n">2</span></div>
+        <div class="body">
+          <h2>Concept 2</h2>
+          <p>Coming soon.</p>
+          <span class="badge soon">In progress</span>
+        </div>
+      </div>
+
+      <div class="card soon">
+        <div class="thumb"><span class="n">3</span></div>
+        <div class="body">
+          <h2>Concept 3</h2>
+          <p>Coming soon.</p>
+          <span class="badge soon">In progress</span>
+        </div>
+      </div>
+
+      <div class="card soon">
+        <div class="thumb"><span class="n">4</span></div>
+        <div class="body">
+          <h2>Concept 4</h2>
+          <p>Coming soon.</p>
+          <span class="badge soon">In progress</span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="hero-scroll"><span>Scroll</span><span class="line"></span></div>
-</section>
 
-<!-- ===== Services overview ===== -->
-<section class="section" id="services">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow">What We Do</span>
-      <h2>From the Foundation Up</h2>
-      <p>No project too big or too small — from a small repair to a fully custom home, and everything in between.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="ico">⌂</div>
-        <h3>Turn-Key Construction</h3>
-        <p>Fully custom homes built from the ground up — we manage every detail so you can simply move in.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="ico">＋</div>
-        <h3>Additions</h3>
-        <p>More room to live, work, and gather — seamlessly integrated with your existing home.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="ico">✶</div>
-        <h3>Renovations</h3>
-        <p>Kitchens, baths, and whole-home transformations that breathe new life into your space.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="ico">⚒</div>
-        <h3>Building Repairs</h3>
-        <p>Honest, lasting repairs — from structural fixes to the details that protect your investment.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="ico">▦</div>
-        <h3>Painting &amp; Exterior</h3>
-        <p>Interior and exterior finishes that look beautiful and stand up to Virginia seasons.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="ico">⛏</div>
-        <h3>Excavation</h3>
-        <p>Site prep, grading, and groundwork done right — the solid start every great build needs.</p>
-        <a href="services.html" class="more">Learn More →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Values ===== -->
-<section class="section section--ink">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why Homeowners Choose Us</span>
-      <h2>Built on More Than Lumber</h2>
-    </div>
-    <div class="values">
-      <div class="value reveal">
-        <h3><span class="num">01</span> Trust</h3>
-        <p>With over 40 years of experience, you can trust we have the knowledge and craftsmanship to make your construction goals a reality.</p>
-      </div>
-      <div class="value reveal">
-        <h3><span class="num">02</span> Honesty</h3>
-        <p>The only way to build trust is with honesty. We pride ourselves on being 100% transparent throughout your entire building process.</p>
-      </div>
-      <div class="value reveal">
-        <h3><span class="num">03</span> Communication</h3>
-        <p>We're here for you. Whenever you need us throughout your project, we're only a call, text, or email away.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Stats ===== -->
-<section class="section--tight section--cream">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat reveal"><div class="figure">40+</div><div class="label">Years Building</div></div>
-      <div class="stat reveal"><div class="figure">500+</div><div class="label">Projects Completed</div></div>
-      <div class="stat reveal"><div class="figure">100%</div><div class="label">Locally Owned</div></div>
-      <div class="stat reveal"><div class="figure">A+</div><div class="label">Reputation</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== About / Split ===== -->
-<section class="section" id="about">
-  <div class="wrap split">
-    <div class="media reveal">
-      <img src="https://ronaldmhawesinc.com/wp-content/uploads/2022/08/rmh-slider-img.png" alt="A custom home built by Ronald M. Hawes Inc.">
-      <div class="badge"><div class="big">1982</div><div class="small">Family Founded</div></div>
-    </div>
-    <div class="reveal">
-      <span class="eyebrow">About Us</span>
-      <h2>Building in Loudoun County for Over 40 Years</h2>
-      <p>We're locals of Loudoun County — which means if one of your building needs is finding the perfect piece of land, we've got you covered. We have great personal relationships with some of the best realtors in the county and surrounding areas, and we can guide you in choosing the right lot for your build.</p>
-      <p>Whether you have plans scribbled on a napkin, full blueprints, or just ideas you need help putting together, we have the experience and expertise to make it happen.</p>
-      <a href="contact.html" class="btn btn--dark">Get to Know Us →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Testimonials ===== -->
-<section class="section section--cream">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Client Testimonials</span>
-      <h2>Words From the Families We've Built For</h2>
-    </div>
-    <div class="tcards">
-      <div class="tcard reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"We love our new room downstairs! It has completely changed our house — finally a gathering place that is wide open, clean, fresh, and comfortable. Perfect timing now that the cold weather is here!"</blockquote>
-        <div class="who">Julie &amp; Peter Prukowski<span>Renovation Client</span></div>
-      </div>
-      <div class="tcard reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"Ron, thanks so much for all you have done! The house is perfect and we just love being here. We spread your name and good work every chance we get."</blockquote>
-        <div class="who">Lyn Morton<span>Custom Home Client</span></div>
-      </div>
-      <div class="tcard reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"We have long congratulated ourselves for choosing you as our builder. You never failed us from beginning to end — from planning to the quality of fabrication. We are wholly satisfied customers."</blockquote>
-        <div class="who">Rolf Valtin<span>Custom Log Home Client</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA band ===== -->
-<section class="cta-band" style="background-image:linear-gradient(rgba(20,18,15,0.82),rgba(20,18,15,0.82)),url('https://ronaldmhawesinc.com/wp-content/uploads/2022/08/rmh-slider-img2.png')">
-  <div class="wrap">
-    <span class="eyebrow" style="color:var(--amber-soft)">Let's Build Something</span>
-    <h2>Ready to Start Your Dream Project?</h2>
-    <p>From a napkin sketch to a finished custom home — we'd love to hear what you're planning. Financing options available.</p>
-    <a href="contact.html" class="btn btn--primary">Request a Consultation →</a>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="brand-name">Ronald M. Hawes Inc.</div>
-        <div class="brand-sub">We Build Your Dreams</div>
-        <p>Custom home builder and general contractor proudly serving Loudoun County and surrounding Northern Virginia for over four decades.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.acornfinance.com/apply?d=7HP00#/financing">Financing</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul>
-          <li><a href="tel:+15408225795" class="contact-line">(540) 822-5795</a></li>
-          <li><a href="mailto:info@ronaldmhawesinc.com" class="contact-line">info@ronaldmhawesinc.com</a></li>
-          <li><span class="contact-line">42505 Lovettsville Road<br>Lovettsville, VA 20180</span></li>
-          <li><a href="https://www.facebook.com/HawesInc/">Facebook</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Ronald M. Hawes Inc. All rights reserved.</span>
-      <span>Licensed &amp; Insured · Class A Contractor, Virginia</span>
-    </div>
-  </div>
-</footer>
-
-<div class="mockup-flag">Design Mockup · For Client Review</div>
-
-<script>
-  // sticky header
-  const header = document.getElementById('header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 60);
-  onScroll(); window.addEventListener('scroll', onScroll);
-  // reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
+  <div class="foot">Design mockups for client review · prepared by <strong>Ken Tannenbaum</strong></div>
 </body>
 </html>
