@@ -341,3 +341,6 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .rmh-chat__foot{font-size:11px;color:var(--mist);text-align:center;padding:9px 12px}
 .rmh-chat__foot a{color:var(--forest)}
 @media(max-width:600px){.rmh-chat__panel{width:calc(100vw - 36px);height:64vh}}
+
+/* sticky-cta retired — chat assistant owns the bottom-right corner */
+.sticky-cta{display:none}
