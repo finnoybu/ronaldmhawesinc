@@ -12,6 +12,7 @@ menu linking to every concept.
 /                  Landing page — concept selector (index.html)
 /site1/            Concept 1 — "Heritage Craft" (warm custom-home aesthetic)
 /site2/            Concept 2 — "Modern Luxury" (bright/airy; live estimator, lightbox, build timeline)
+/site3/            Concept 3 — "Heritage Estate" (classic navy & cream; logo-forward, formal)
 /assets/           Shared brand assets (logo.png)
 /site3/            Concept 3 — (planned)
 /site4/            Concept 4 — (planned)
