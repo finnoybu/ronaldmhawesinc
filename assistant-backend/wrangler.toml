@@ -1,0 +1,6 @@
+name = "hawes-assistant"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# The Claude API key is NOT stored here. Set it as an encrypted secret:
+#   wrangler secret put ANTHROPIC_API_KEY

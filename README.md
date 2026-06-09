@@ -46,6 +46,18 @@ No build step. Open `index.html` in a browser, or serve the folder:
 python -m http.server 8000   # then visit http://localhost:8000
 ```
 
+## AI chat assistant
+
+All three concepts include a floating chat assistant ("Ask us", bottom-right) that answers
+visitor questions about Hawes' services.
+
+- **Front end:** `assets/assistant.js` (shared), themed per concept via each site's stylesheet.
+- **Back end:** `assistant-backend/` — a Cloudflare Worker that calls Claude with a system
+  prompt grounded in Hawes' services. Deploy steps are in `assistant-backend/README.md`.
+- **Demo mode:** until the Worker is deployed, the widget uses a built-in canned responder,
+  so it still answers common questions in the mockup. Set `API_ENDPOINT` in
+  `assets/assistant.js` to the deployed Worker URL to switch to live AI.
+
 ## Adding a new concept
 
 1. Copy an existing concept folder: `site1` → `site2`.
