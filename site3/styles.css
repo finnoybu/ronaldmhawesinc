@@ -258,3 +258,8 @@ img{display:block;max-width:100%}
   .filter{width:100%;flex-wrap:wrap}
   .hero__actions{flex-direction:column}
 }
+
+/* Reviewer nav — mirrors the mockup tag, links to concept menu */
+.review-nav{position:fixed;right:18px;bottom:18px;z-index:121;display:inline-flex;align-items:center;gap:8px;background:var(--navy-dk);color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;box-shadow:var(--shadow-md);transition:.2s}
+.review-nav::before{content:"\2190";font-size:13px;letter-spacing:0}
+.review-nav:hover{background:var(--navy);color:#fff}
