@@ -336,7 +336,7 @@ img { display: block; max-width: 100%; }
 
 /* ---------- Mockup banner ---------- */
 .mockup-flag {
-  position: fixed; bottom: 18px; left: 18px; z-index: 200;
+  position: fixed; bottom: 54px; left: 18px; z-index: 200;
   background: var(--ink); color: var(--amber-soft); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
   padding: 9px 16px; border-radius: 2px; box-shadow: var(--shadow-md); border: 1px solid rgba(255,255,255,0.15);
 }
@@ -366,6 +366,7 @@ img { display: block; max-width: 100%; }
 }
 
 /* Reviewer nav — mirrors the mockup tag, links to concept menu */
-.review-nav{position:fixed;right:18px;bottom:18px;z-index:200;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--amber-soft);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:9px 16px;border-radius:2px;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,.15);transition:.2s}
+.review-nav{position:fixed;left:18px;bottom:18px;z-index:200;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--amber-soft);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:9px 16px;border-radius:2px;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,.15);transition:.2s}
 .review-nav::before{content:"\2190";font-size:13px;letter-spacing:0}
 .review-nav:hover{background:var(--charcoal);color:#fff}
+ 

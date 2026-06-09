@@ -235,7 +235,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .fld2 textarea{min-height:120px;resize:vertical}
 
 /* ---------- Sticky CTA ---------- */
-.sticky-cta{position:fixed;right:18px;bottom:76px;z-index:130;background:var(--forest);color:#fff;padding:15px 24px;border-radius:100px;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:9px;box-shadow:var(--shadow-md);transition:.25s;transform:translateY(120px)}
+.sticky-cta{position:fixed;right:22px;bottom:22px;z-index:130;background:var(--forest);color:#fff;padding:15px 24px;border-radius:100px;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:9px;box-shadow:var(--shadow-md);transition:.25s;transform:translateY(120px)}
 .sticky-cta.show{transform:none}
 .sticky-cta:hover{background:var(--forest-dk);transform:translateY(-2px)}
 
@@ -284,7 +284,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .fbot{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:rgba(255,255,255,.45)}
 
 /* ---------- Mockup flag ---------- */
-.mflag{position:fixed;left:18px;bottom:18px;z-index:130;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;border-radius:100px;box-shadow:var(--shadow-md)}
+.mflag{position:fixed;left:18px;bottom:54px;z-index:130;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;border-radius:100px;box-shadow:var(--shadow-md)}
 
 /* ---------- Reveal ---------- */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
@@ -313,6 +313,6 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 }
 
 /* Reviewer nav — mirrors the mockup tag, links to concept menu */
-.review-nav{position:fixed;right:18px;bottom:18px;z-index:131;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:10px 17px;border-radius:100px;box-shadow:var(--shadow-md);transition:.2s}
+.review-nav{position:fixed;left:18px;bottom:18px;z-index:131;display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:10px 17px;border-radius:100px;box-shadow:var(--shadow-md);transition:.2s}
 .review-nav::before{content:"\2190";font-size:13px;letter-spacing:0}
 .review-nav:hover{opacity:.85}

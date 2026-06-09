@@ -231,7 +231,7 @@ img{display:block;max-width:100%}
 .fbot{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;margin-top:30px;font-size:13px;color:rgba(255,255,255,.45)}
 
 /* ---------- Mockup flag ---------- */
-.mflag{position:fixed;left:18px;bottom:18px;z-index:120;background:var(--navy-dk);color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;box-shadow:var(--shadow-md)}
+.mflag{position:fixed;left:18px;bottom:54px;z-index:120;background:var(--navy-dk);color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;box-shadow:var(--shadow-md)}
 
 /* ---------- Reveal ---------- */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -260,6 +260,6 @@ img{display:block;max-width:100%}
 }
 
 /* Reviewer nav — mirrors the mockup tag, links to concept menu */
-.review-nav{position:fixed;right:18px;bottom:18px;z-index:121;display:inline-flex;align-items:center;gap:8px;background:var(--navy-dk);color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;box-shadow:var(--shadow-md);transition:.2s}
+.review-nav{position:fixed;left:18px;bottom:18px;z-index:121;display:inline-flex;align-items:center;gap:8px;background:var(--navy-dk);color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;box-shadow:var(--shadow-md);transition:.2s}
 .review-nav::before{content:"\2190";font-size:13px;letter-spacing:0}
 .review-nav:hover{background:var(--navy);color:#fff}
